@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Møde café de especialidad en Avellaneda. Café de tercera ola, pastelería artesanal y brunch. Minimalismo escandinavo con calidez porteña.">
+    <title>Møde café de especialidad | Avellaneda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header__container">
+            <a href="#hero" class="header__logo">
+                <span class="logo-text">m<span class="logo-ø">ø</span>de</span>
+            </a>
+            <nav class="header__nav" id="mainNav">
+                <a href="#menu" class="nav__link">Menú</a>
+                <a href="#gallery" class="nav__link">Galería</a>
+                <a href="#about" class="nav__link">Nosotros</a>
+                <a href="#contact" class="nav__link">Contacto</a>
+            </nav>
+            <a href="http://wa.me/5491171550907?text=Hola%20Møde%2C%20quiero%20hacer%20una%20consulta" class="header__cta" target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                WhatsApp
+            </a>
+            <button class="header__hamburger" id="hamburger" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-menu__nav">
+            <a href="#menu" class="mobile-menu__link">Menú</a>
+            <a href="#gallery" class="mobile-menu__link">Galería</a>
+            <a href="#about" class="mobile-menu__link">Nosotros</a>
+            <a href="#contact" class="mobile-menu__link">Contacto</a>
+            <a href="http://wa.me/5491171550907?text=Hola%20Møde%2C%20quiero%20hacer%20una%20consulta" class="mobile-menu__cta" target="_blank" rel="noopener">WhatsApp</a>
+        </nav>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero__container">
+            <div class="hero__content">
+                <h1 class="hero__title">Un café mil encuentros</h1>
+                <p class="hero__subtitle">Café de especialidad en Avellaneda. Minimalismo escandinavo con calidez porteña. Donde el diseño se encuentra con el sabor.</p>
+                <div class="hero__buttons">
+                    <a href="#menu" class="btn btn--primary">Ver menú</a>
+                    <a href="#contact" class="btn btn--secondary">Reservá tu mesa</a>
+                </div>
+                <div class="hero__rating">
+                    <span class="rating__stars">★★★★★</span>
+                    <span class="rating__text">4.6 en Google · 486 reseñas</span>
+                </div>
+            </div>
+            <div class="hero__image">
+                <img src="https://lh3.googleusercontent.com/grass-cs/ACvplmNAYZ3hRjHbX5vTX5G3Gb7BHmmBSKnfUlCbN_RTHVBRMfi7Ju4aHg483HBCFHt3iWaYdeMxqqgaYW-8plhNWD44oNhh85PSJtGrXATmFSm05XCkgS_9DwqDCm-L5dlWRUexaONVT-ovEBlZ=s1360-w1360-h1020-rw" alt="Interior de Møde café de especialidad" class="hero__img" loading="eager">
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <a href="#differentials" class="scroll__link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 5v14M19 12l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Differentials -->
+    <section class="differentials" id="differentials">
+        <div class="differentials__container">
+            <div class="differential" data-animate="fade-up">
+                <div class="differential__icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 4v40M4 24h40M12 12l24 24M36 12L12 36" stroke="#C8983A" stroke-width="2" stroke-linecap="round"/>
+                        <circle cx="24" cy="24" r="8" fill="#C8983A" fill-opacity="0.2"/>
+                    </svg>
+                </div>
+                <h3 class="differential__title">Café de tercera ola</h3>
+                <p class="differential__text">Servido a 65° para resaltar cada nota de sabor. Beans de origen, tueste artesanal y preparación precisa por baristas apasionados.</p>
+            </div>
+            <div class="differential" data-animate="fade-up" data-delay="100">
+                <div class="differential__icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 40V20c0-8.837 7.163-16 16-16s16 7.163 16 16v20" stroke="#C8983A" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M14 40h20M24 4v8M20 40v-8a4 4 0 018 0v8" stroke="#C8983A" stroke-width="2" stroke-linecap="round"/>
+                        <circle cx="24" cy="24" r="4" fill="#C8983A" fill-opacity="0.2"/>
+                    </svg>
+                </div>
+                <h3 class="differential__title">Pastelería artesanal</h3>
+                <p class="differential__text">Croissants franceses, alfajores de autor y tortas estacionales. Todo hecho en casa con ingredientes premium y mucho amor.</p>
+            </div>
+            <div class="differential" data-animate="fade-up" data-delay="200">
+                <div class="differential__icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4 4 12.954 4 24s8.954 20 20 20z" stroke="#C8983A" stroke-width="2"/>
+                        <path d="M16 28c0-4.418 3.582-8 8-8s8 3.582 8 8M20 18c0-2.21 1.79-4 4-4s4 1.79 4 4" stroke="#C8983A" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M24 4v4M4 24h4M44 24h-4M24 44v-4" stroke="#C8983A" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3 class="differential__title">Espacio curado</h3>
+                <p class="differential__text">Diseño escandinavo con toques porteños. Terrazzo, vegetación tropical, neón artesanal y los asientos más cómodos del centro de Avellaneda.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="menu" id="menu">
+        <div class="menu__container">
+            <div class="menu__header">
+                <h2 class="menu__title" data-animate="fade-up">Nuestra carta</h2>
+                <p class="menu__subtitle" data-animate="fade-up" data-delay="100">Menú otoño-invierno · Sede Avellaneda</p>
+            </div>
+            
+            <div class="menu__tabs" data-animate="fade-up" data-delay="200">
+                <button class="menu__tab menu__tab--active" data-tab="cafeteria">Cafetería</button>
+                <button class="menu__tab" data-tab="pasteleria">Pastelería</button>
+                <button class="menu__tab" data-tab="brunch">Brunch</button>
+                <button class="menu__tab" data-tab="lunch">Lunch</button>
+                <button class="menu__tab" data-tab="bebidas">Bebidas</button>
+                <button class="menu__tab" data-tab="combos">Combos</button>
+            </div>
+
+            <!-- Cafetería -->
+            <div class="menu__category menu__category--active" id="cafeteria">
+                <div class="category__header">
+                    <h3 class="category__title">☕ Nuestra Cafetería</h3>
+                    <p class="category__note">Café servido a 65° para resaltar su sabor. Si preferís tomarlo más caliente, avisale al barista.</p>
+                    <p class="category__promo">¡Ahora café con refill gratis! Lunes a viernes de 9 a 11hs pidiendo un café + algo de brunch & all day.</p>
+                </div>
+                <div class="menu__items">
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Espresso</h4>
+                            <p class="item__desc">Base de toda nuestra carta. Intenso y aromático.</p>
+                        </div>
+                        <span class="item__price">$4.250</span>
+                    </div>
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Cappuccino</h4>
+                            <p class="item__desc">Espresso con leche texturizada y espuma cremosa.</p>
+                        </div>
+                        <span class="item__price">$5.900</span>
+                    </div>
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Latte</h4>
+                            <p class="item__desc">Suave y equilibrado, ideal para acompañar pastelería.</p>
+                        </div>
+                        <span class="item__price">$5.800</span>
+                    </div>
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Flat White</h4>
+                            <p class="item__desc">Doble espresso con microespuma de leche sedosa.</p>
+                        </div>
+                        <span class="item__price">$5.900</span>
+                    </div>
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Magic</h4>
+                            <p class="item__desc">Doble espresso con leche texturizada, intenso y cremoso.</p>
+                        </div>
+                        <span class="item__price">$5.250</span>
+                    </div>
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Cafés especiales</h4>
+                            <p class="item__desc">Mocaccino · Frappuccino · Espresso tonic · Caramel flat · Vainilla latte</p>
+                        </div>
+                        <span class="item__price">$6.900</span>
+                    </div>
+                    <div class="menu__item menu__item--highlight">
+                        <div class="item__info">
+                            <h4 class="item__name">⭐ Nute Latte</h4>
+                            <p class="item__desc">Edición especial otoño/invierno.</p>
+                        </div>
+                        <span class="item__price">$7.000</span>
+                    </div>
+                    <div class="menu__item menu__item--highlight">
+                        <div class="item__info">
+                            <h4 class="item__name">Latte con proteína x DIABLA</h4>
+                            <p class="item__desc">15 grs de proteína / sin lactosa / sin gluten / sin azúcar. Chocolate o vainilla.</p>
+                        </div>
+                        <span class="item__price">$7.000</span>
+                    </div>
+                </div>
+                <div class="menu__more">
+                    <a href="http://wa.me/5491171550907?text=Hola%20Møde%2C%20quiero%20ver%20el%20menú%20completo%20de%20cafetería" class="btn btn--outline" target="_blank" rel="noopener">Ver carta completa</a>
+                </div>
+            </div>
+
+            <!-- Pastelería -->
+            <div class="menu__category" id="pasteleria">
+                <div class="category__header">
+                    <h3 class="category__title">🥐 Nuestra Pastelería</h3>
+                    <p class="category__note">En mostrador. Consultá por más opciones disponibles.</p>
+                </div>
+                <div class="menu__items">
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Croissant rellena de crema de almendras</h4>
+                            <p class="item__desc">🤎 favorito del team</p>
+                        </div>
+                        <span class="item__price">$7.500</span>
+                    </div>
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Alfajor de pistacho</h4>
+                            <p class="item__desc">Ganache de choco blanco y centro de frutos rojos 🤎 favorito del team</p>
+                        </div>
+                        <span class="item__price">$6.900</span>
+                    </div>
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Brownie de pistachos y frutos rojos</h4>
+                            <p class="item__desc">Intenso, húmedo y con el contraste justo.</p>
+                        </div>
+                        <span class="item__price">$8.000</span>
+                    </div>
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Roll de canela y nuez</h4>
+                            <p class="item__desc">Ahora con frosting. Especiado y adictivo.</p>
+                        </div>
+                        <span class="item__price">$6.600</span>
+                    </div>
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Cookies</h4>
+                            <p class="item__desc">Choco y sal · Pistacho · Red velvet · Nutella 🤎</p>
+                        </div>
+                        <span class="item__price">$5.900 - $6.900</span>
+                    </div>
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Chipá (2 unidades)</h4>
+                            <p class="item__desc">Pedilos calentitos. Crocantes por fuera, tiernos por dentro.</p>
+                        </div>
+                        <span class="item__price">$5.200</span>
+                    </div>
+                    <div class="menu__item menu__item--highlight">
+                        <div class="item__info">
+                            <h4 class="item__name">Mini alfajorcitos de maicena (porción x2)</h4>
+                            <p class="item__desc">⭐ nuevo</p>
+                        </div>
+                        <span class="item__price">$2.800</span>
+                    </div>
+                    <div class="menu__item menu__item--highlight">
+                        <div class="item__info">
+                            <h4 class="item__name">Bocadito fit (porción x2)</h4>
+                            <p class="item__desc">⭐ nuevo — Trufas sin azúcar, sin gluten, vegano, fit.</p>
+                        </div>
+                        <span class="item__price">$3.000</span>
+                    </div>
+                </div>
+                <div class="menu__more">
+                    <a href="http://wa.me/5491171550907?text=Hola%20Møde%2C%20quiero%20ver%20el%20menú%20completo%20de%20pastelería" class="btn btn--outline" target="_blank" rel="noopener">Ver toda la pastelería</a>
+                </div>
+            </div>
+
+            <!-- Brunch -->
+            <div class="menu__category" id="brunch">
+                <div class="category__header">
+                    <h3 class="category__title">🍳 Brunch & All Day</h3>
+                    <p class="category__promo">¡Ahora refill de café de lunes a viernes 9 a 11hs!</p>
+                </div>
+                <div class="menu__items">
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Tostón møde</h4>
+                            <p class="item__desc">Pan de masa madre, crema de palta, cherrys confitados, crema de ricota, miel, mix de pistachos y castañas.</p>
+                        </div>
+                        <span class="item__price">$10.700</span>
+                    </div>
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Avocado toast</h4>
+                            <p class="item__desc">Tostada de masa madre, crema de palta, cherrys, huevo posche y ciboulette picada.</p>
+                        </div>
+                        <span class="item__price">$11.200</span>
+                    </div>
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Pancakes fit</h4>
+                            <p class="item__desc">De cacao y avena con manteca de maní, frutillas, banana y almendras picaditas.</p>
+                        </div>
+                        <span class="item__price">$11.000</span>
+                    </div>
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Yogurt møde</h4>
+                            <p class="item__desc">Granola casera, frutas de estación y miel.</p>
+                        </div>
+                        <span class="item__price">$9.800</span>
+                    </div>
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Brioche dorado</h4>
+                            <p class="item__desc">⭐ nuevo — Pan brioche con jamón cocido natural y queso, cream cheese de hierbas y muzzarella doradita.</p>
+                        </div>
+                        <span class="item__price">$11.500</span>
+                    </div>
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Bacon toast</h4>
+                            <p class="item__desc">⭐ nuevo — Masa madre, crema de morrones asados, huevos revueltos, panceta crispy y nube de parmesano.</p>
+                        </div>
+                        <span class="item__price">$11.900</span>
+                    </div>
+                    <div class="menu__item menu__item--special">
+                        <div class="item__info">
+                            <h4 class="item__name">Merienda para 2 :)</h4>
+                            <p class="item__desc">2 latte + mini jugo de naranja + chipa toast + torta de manzana + mini alfajorcitos de maicena + tostadas con queso crema y mermelada. Válido solo los fines de semana.</p>
+                        </div>
+                        <span class="item__price">$28.000</span>
+                    </div>
+                </div>
+                <div class="menu__more">
+                    <a href="http://wa.me/5491171550907?text=Hola%20Møde%2C%20quiero%20ver%20el%20menú%20completo%20de%20brunch" class="btn btn--outline" target="_blank" rel="noopener">Ver todo el brunch</a>
+                </div>
+            </div>
+
+            <!-- Lunch -->
+            <div class="menu__category" id="lunch">
+                <div class="category__header">
+                    <h3 class="category__title">🥪 Lunch</h3>
+                    <p class="category__note">Platos para almorzar o merendar con hambre real.</p>
+                </div>
+                <div class="menu__items">
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Chicken wrap</h4>
+                            <p class="item__desc">↩ ¡el favorito de muchos! — Pollo marinado en mostaza suave, cebolla caramelizada, gruyere, espinaca fresca con mix de hojas y cherrys.</p>
+                        </div>
+                        <span class="item__price">$15.200</span>
+                    </div>
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Tarta orange</h4>
+                            <p class="item__desc">Calabaza horneada, muzzarella y cebolla caramelizada con mix de hojas verdes y cherrys confitados.</p>
+                        </div>
+                        <span class="item__price">$13.300</span>
+                    </div>
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Ensalada caesar</h4>
+                            <p class="item__desc">Mix de hojas verdes, parmesano en escamas, pollo grillado, croutons y aderezo caesar.</p>
+                        </div>
+                        <span class="item__price">$14.200</span>
+                    </div>
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Blue chicken</h4>
+                            <p class="item__desc">Sándwich de pollo grillado, chutney de cebollas, crema de queso azul, radiccio y rúcula fresca con chips de batata.</p>
+                        </div>
+                        <span class="item__price">$14.500</span>
+                    </div>
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Pulled pork bbq</h4>
+                            <p class="item__desc">⭐ nuevo — Wrap de cerdo desmechado a la BBQ, queso dambo, cebolla caramelizada y tomates confitados con hojas verdes y cherrys.</p>
+                        </div>
+                        <span class="item__price">$15.200</span>
+                    </div>
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Club sandwich</h4>
+                            <p class="item__desc">⭐ nuevo — Lomito horneado, queso, huevo a la plancha, tomate, lechuga y aderezo de mostaza en pan brioche con chips de batatas.</p>
+                        </div>
+                        <span class="item__price">$14.500</span>
+                    </div>
+                    <div class="menu__item menu__item--special">
+                        <div class="item__info">
+                            <h4 class="item__name">Møde Ejecutivo</h4>
+                            <p class="item__desc">Plato principal + limonada + café. Opciones: ensalada caesar / pulled pork BBQ + ensaladita / tarta de calabaza + ensaladita. Solo lunes a viernes de 12:00 a 15:00hs.</p>
+                        </div>
+                        <span class="item__price">$16.500</span>
+                    </div>
+                    <div class="menu__item menu__item--special">
+                        <div class="item__info">
+                            <h4 class="item__name">Møde Teen</h4>
+                            <p class="item__desc">Elegí tu plato principal: wrap caesar / pulled pork bbq / tostado de lomito, queso, lechuga y tomate en pan brioche. ¡Ahora con limonada gratis! Solo de lunes a viernes.</p>
+                        </div>
+                        <span class="item__price">$11.000</span>
+                    </div>
+                </div>
+                <div class="menu__more">
+                    <a href="http://wa.me/5491171550907?text=Hola%20Møde%2C%20quiero%20ver%20el%20menú%20completo%20de%20lunch" class="btn btn--outline" target="_blank" rel="noopener">Ver toda la carta</a>
+                </div>
+            </div>
+
+            <!-- Bebidas -->
+            <div class="menu__category" id="bebidas">
+                <div class="category__header">
+                    <h3 class="category__title">🥤 Bebidas & 🍹 Drinks</h3>
+                    <p class="category__note">Desde jugos naturales hasta tragos con alcohol.</p>
+                </div>
+                <div class="menu__items">
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Licuado de mango y maracuyá</h4>
+                            <p class="item__desc">Refrescante, natural y con ese puntito ácido que realza los sabores.</p>
+                        </div>
+                        <span class="item__price">$6.800</span>
+                    </div>
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Limonada con menta y jengibre</h4>
+                            <p class="item__desc">Perfecta para los días de calor.</p>
+                        </div>
+                        <span class="item__price">$6.000</span>
+                    </div>
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Exprimido de naranja</h4>
+                            <p class="item__desc">Recién exprimido, puro sabor cítrico.</p>
+                        </div>
+                        <span class="item__price">$6.500</span>
+                    </div>
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Aperol spritz</h4>
+                            <p class="item__desc">Aperol, soda y espumante. Clásico italiano.</p>
+                        </div>
+                        <span class="item__price">$8.000</span>
+                    </div>
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Gin tonic</h4>
+                            <p class="item__desc">Gin, tónica, pepino, naranja o limón.</p>
+                        </div>
+                        <span class="item__price">$8.500</span>
+                    </div>
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Coffee baileys</h4>
+                            <p class="item__desc">Espresso, baileys, hielo y toque de dulce de leche.</p>
+                        </div>
+                        <span class="item__price">$8.000</span>
+                    </div>
+                </div>
+                <div class="menu__more">
+                    <a href="http://wa.me/5491171550907?text=Hola%20Møde%2C%20quiero%20ver%20las%20bebidas%20completas" class="btn btn--outline" target="_blank" rel="noopener">Ver todas las bebidas</a>
+                </div>
+            </div>
+
+            <!-- Combos -->
+            <div class="menu__category" id="combos">
+                <div class="category__header">
+                    <h3 class="category__title">🎁 Combos & Descuentos</h3>
+                    <p class="category__note">Ahorramos con combinaciones pensadas para vos.</p>
+                </div>
+                <div class="menu__items">
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Combo café + medialunas</h4>
+                            <p class="item__desc">Café latte o té + 2 medialunas.</p>
+                        </div>
+                        <span class="item__price">$9.500</span>
+                    </div>
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Combo café + tostadas</h4>
+                            <p class="item__desc">Café latte o té + 2 tostadas + dips de queso y mermelada.</p>
+                        </div>
+                        <span class="item__price">$10.500</span>
+                    </div>
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Combo café + huevos</h4>
+                            <p class="item__desc">Café latte o té + huevos revueltos.</p>
+                        </div>
+                        <span class="item__price">$13.000</span>
+                    </div>
+                    <div class="menu__item">
+                        <div class="item__info">
+                            <h4 class="item__name">Menú de encuentro</h4>
+                            <p class="item__desc">2 bebidas (café o limonada) + 3 platitos (yogurt, huevos, budín, tostón) + chips de batata + quesos + frutos secos.</p>
+                        </div>
+                        <span class="item__price">$30.000</span>
+                    </div>
+                </div>
+                <div class="discounts">
+                    <h4 class="discounts__title">🎁 Descuentos todos los días</h4>
+                    <ul class="discounts__list">
+                        <li>15% siendo socio de CRA (presentando carnet)</li>
+                        <li>10% siendo miembro de SportClub</li>
+                        <li>15% con tarjeta Galicia (consultar promoción, sujeto a modificación mensual)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="process" id="process">
+        <div class="process__container">
+            <h2 class="process__title" data-animate="fade-up">Nuestro proceso</h2>
+            <p class="process__subtitle" data-animate="fade-up" data-delay="100">De la semilla a tu taza, cada paso cuenta.</p>
+            
+            <div class="process__steps">
+                <div class="process__step" data-animate="fade-up" data-delay="200">
+                    <div class="step__number">01</div>
+                    <h3 class="step__title">Seleccionamos</h3>
+                    <p class="step__text">Trabajamos con productores que conocemos por nombre. Cada lote de café es probado en cata antes de llegar a nuestro tuestador.</p>
+                </div>
+                <div class="process__step" data-animate="fade-up" data-delay="300">
+                    <div class="step__number">02</div>
+                    <h3 class="step__title">Tuestamos</h3>
+                    <p class="step__text">Tueste artesanal en lotes pequeños. Cada origen tiene su perfil: buscamos resaltar notas frutales, achocolatadas o tostadas según la cosecha.</p>
+                </div>
+                <div class="process__step" data-animate="fade-up" data-delay="400">
+                    <div class="step__number">03</div>
+                    <h3 class="step__title">Preparamos</h3>
+                    <p class="step__text">Nuestros baristas calibran molinillo y extracción diariamente. El café se sirve a 65° para que percibas cada nota de sabor sin quemarte.</p>
+                </div>
+                <div class="process__step" data-animate="fade-up" data-delay="500">
+                    <div class="step__number">04</div>
+                    <h3 class="step__title">Compartimos</h3>
+                    <p class="step__text">Un café mil encuentros. Cada taza es una excusa para charlar, trabajar, o simplemente estar. Eso es lo que nos mueve.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Star Product -->
+    <section class="star-product" id="star-product">
+        <div class="star-product__container">
+            <div class="star-product__content" data-animate="fade-right">
+                <span class="star-product__label">Nuestro plato estrella</span>
+                <h2 class="star-product__title">Tarta de calabaza, queso y cebollitas caramelizadas</h2>
+                <p class="star-product__text">La tarta que más piden y que más sorprende. Calabaza horneada, muzzarella fundida y cebolla caramelizada que equilibra todo con su dulzor natural. Viene acompañada de hojas verdes frescas y tomatitos confitados que le dan ese toque ácido perfecto.</p>
+                <div class="star-product__price">
+                    <span class="price__amount">$13.300</span>
+                    <span class="price__note">Tarta orange — para compartir</span>
+                </div>
+                <a href="http://wa.me/5491171550907?text=Hola%20Møde%2C%20quiero%20pedir%20la%20Tarta%20orange" class="btn btn--primary" target="_blank" rel="noopener">Pedir ahora</a>
+            </div>
+            <div class="star-product__image" data-animate="fade-left">
+                <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnJLQd6yoaDNKCK5j5iHayRtaR6WnNH4_Llxx9mTOdSUZuLRgwDZLgfMNzSwPxgYJCwh5eWLw1izb2kRawE7YrT2tbvD8ySORWqdjLBqxC7hCX6xFPBw6Zp3NUk3mQukKfl4XfaAh78cyvs=s1360-w1360-h1020-rw" alt="Tarta orange de Møde café" class="star-product__img" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery" id="gallery">
+        <div class="gallery__container">
+            <h2 class="gallery__title" data-animate="fade-up">Momentos Møde</h2>
+            <p class="gallery__subtitle" data-animate="fade-up" data-delay="100">Un vistazo a lo que te espera.</p>
+            
+            <div class="gallery__grid">
+                <div class="gallery__item gallery__item--large" data-animate="fade-up">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmDmvimfbbFHA4dCi3Qo0ZJ4jO12jIjHdYgRYmUAOjrdS_NV9xPVOLt7iBs8kN97Ybb2ZkQtJR_orjAPszV7bUI-uG619zZgRs5gqR8TutrAYPK5s5lpB3pi0OEZ-sKi-n9p-949vudmrbc=s1360-w1360-h1020-rw" alt="Interior de Møde" class="gallery__img" loading="lazy">
+                </div>
+                <div class="gallery__item" data-animate="fade-up" data-delay="100">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnYd5vPfUkP4msy3X9nPoc5CxRvTcsfIYQJ2vqlHCnFMOYqK2SddRafrJEJLTMvip4jY5sTtUI_BTGXNtusWdLdRIcfDnECpZ4FykVz78l7HUAgfp9TJgWwWT9-HF0exWeAvnfUemS7ggI=s1360-w1360-h1020-rw" alt="Café y galletita" class="gallery__img" loading="lazy">
+                </div>
+                <div class="gallery__item" data-animate="fade-up" data-delay="200">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn790aCBgU289iILu4a_fzAoh8CYf9JAtbS51LaokIuMl-aGc2IRqbmDlQS2hsqsObCIPPdz3RxmBcN9zi3TF9eF5q_uzPPzl8FbJG7J8PJdkbbkKrj1ZYuskALUdHIu66BgK8iz0QoUwyj=s1360-w1360-h1020-rw" alt="Café y factura" class="gallery__img" loading="lazy">
+                </div>
+                <div class="gallery__item" data-animate="fade-up" data-delay="300">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlEB4xXto8YaaR-3GuwzZgm_tzQvAafkFwN359IysIxMqMDgDKSqlpO2O0ubWChVZECm2KUChKCBD38sFAJv2PYQV9GawiJJQGI842dzLJ-qs1U47Ti1WKcLYx4aOMU6-bzNRvUoQ4saqwa=s1360-w1360-h1020-rw" alt="Plantas en el local" class="gallery__img" loading="lazy">
+                </div>
+                <div class="gallery__item" data-animate="fade-up" data-delay="400">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWniUKYB4KUOBn5xeb36ik0JhuZ013mtdpQ92jYjPqVhaguMYlKB3lV4CwDzwqE2bjHP-TMY5w-OJOxoyr0nf1ObK_7AA7FURDtiLqJcAg4dAB_7NGZ6d8e0aj9osWa1AA_lRb26TMSC1n0=s1360-w1360-h1020-rw" alt="Desayuno completo" class="gallery__img" loading="lazy">
+                </div>
+                <div class="gallery__item gallery__item--medium" data-animate="fade-up" data-delay="500">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkNbv29WAkleMAi1GNhSSKlLgcV5Pdm_xc5zK4A1d7Jmff8WtLchWtWgT9SvOWmqTaOkmZ6emqHbziZYB_55bX5ngB63iB7S94L_9jzzDDI-RJDLQHcVGtqUqTzpYVJPk3iC_8bHDwx_iU=s1360-w1360-h1020-rw" alt="Mesas del local" class="gallery__img" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="testimonials__container">
+            <h2 class="testimonials__title" data-animate="fade-up">Lo que dicen nuestros visitantes</h2>
+            <p class="testimonials__rating" data-animate="fade-up" data-delay="100">4.6 ★★★★★ basado en 486 reseñas de Google</p>
+            
+            <div class="testimonials__grid">
+                <div class="testimonial" data-animate="fade-up" data-delay="200">
+                    <div class="testimonial__header">
+                        <div class="testimonial__avatar">MG</div>
+                        <div class="testimonial__info">
+                            <h4 class="testimonial__name">María G.</h4>
+                            <span class="testimonial__date">hace 2 semanas</span>
+                        </div>
+                        <div class="testimonial__stars">★★★★★</div>
+                    </div>
+                    <p class="testimonial__text">"Pedí una tarta de calabaza, queso y cebollitas caramelizadas que estaba muy rica. Me sorprendió (para bien) que venía acompañada de hojas verdes frescas y tomatitos confitados. El licuado de mango y maracuyá: simplemente delicioso."</p>
+                </div>
+                
+                <div class="testimonial" data-animate="fade-up" data-delay="300">
+                    <div class="testimonial__header">
+                        <div class="testimonial__avatar">LC</div>
+                        <div class="testimonial__info">
+                            <h4 class="testimonial__name">Luciano C.</h4>
+                            <span class="testimonial__date">hace 1 mes</span>
+                        </div>
+                        <div class="testimonial__stars">★★★★★</div>
+                    </div>
+                    <p class="testimonial__text">"La pastelería es exquisita, la crema pastelera del croissant que probé estaba muy rica y fresca. La cookie red velvet es muy deliciosa y gigante. El lugar es súper cálido y el ambiente ideal para charlar."</p>
+                </div>
+                
+                <div class="testimonial" data-animate="fade-up" data-delay="400">
+                    <div class="testimonial__header">
+                        <div class="testimonial__avatar">AR</div>
+                        <div class="testimonial__info">
+                            <h4 class="testimonial__name">Andrés R.</h4>
+                            <span class="testimonial__date">hace 3 semanas</span>
+                        </div>
+                        <div class="testimonial__stars">★★★★★</div>
+                    </div>
+                    <p class="testimonial__text">"Muy lindo lugar para desayunar o merendar. La atención es muy buena y la calidad de lo que pedimos excelente. Los asientos son los más cómodos del centro de Avellaneda. ¡Súper recomendable!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Moments -->
+    <section class="moments" id="moments">
+        <div class="moments__container">
+            <h2 class="moments__title" data-animate="fade-up">¿Cuándo venís?</h2>
+            <p class="moments__subtitle" data-animate="fade-up" data-delay="100">Cada momento tiene su Møde.</p>
+            
+            <div class="moments__grid">
+                <div class="moment" data-animate="fade-up" data-delay="200">
+                    <div class="moment__image">
+                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWniUKYB4KUOBn5xeb36ik0JhuZ013mtdpQ92jYjPqVhaguMYlKB3lV4CwDzwqE2bjHP-TMY5w-OJOxoyr0nf1ObK_7AA7FURDtiLqJcAg4dAB_7NGZ6d8e0aj9osWa1AA_lRb26TMSC1n0=s1360-w1360-h1020-rw" alt="Desayuno en Møde" class="moment__img" loading="lazy">
+                    </div>
+                    <div class="moment__content">
+                        <h3 class="moment__title">El café de la mañana</h3>
+                        <p class="moment__text">Lunes a viernes de 8 a 11hs. Refill gratis en café con tu brunch. Arrancá el día con energía y buen gusto.</p>
+                        <span class="moment__hours">8:00 - 11:00hs</span>
+                    </div>
+                </div>
+                
+                <div class="moment" data-animate="fade-up" data-delay="300">
+                    <div class="moment__image">
+                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn6rS-PMkffNcMyXJoZ2a7pJiTAcZAvpuJX_9dU73JkHpSDHFE7_y0rM4InroC-FBXSxQwyv2BKpkYfy9rdOVr2sPIys-L67evDsoTYr4oJMJWgl_HW9SGrW6lKVossw6zGHdCtbMEji__C=s1360-w1360-h1020-rw" alt="Personas en Møde" class="moment__img" loading="lazy">
+                    </div>
+                    <div class="moment__content">
+                        <h3 class="moment__title">La merienda con amigos</h3>
+                        <p class="moment__text">Tarde de tortas, charla y buena música. El ambiente perfecto para encontrarse sin prisas.</p>
+                        <span class="moment__hours">15:00 - 20:00hs</span>
+                    </div>
+                </div>
+                
+                <div class="moment" data-animate="fade-up" data-delay="400">
+                    <div class="moment__image">
+                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmDLLU6expEHFlx2tCsIhY7Fay3X6SWyktCuc_ze9qagiDHrgoUUh8j9gCmCOieFVacpAIn_oOAJz7J_efUtzgN8jtm2WARNpA2y-MeikW_2msDGYgTbxnUTSZpSunUF-nQg4KNLFvSMnMT=s1360-w1360-h1020-rw" alt="Brunch de fin de semana" class="moment__img" loading="lazy">
+                    </div>
+                    <div class="moment__content">
+                        <h3 class="moment__title">El brunch del domingo</h3>
+                        <p class="moment__text">Sábados y domingos desde 9hs. La "Merienda para 2" y todos los platos especiales para compartir en familia.</p>
+                        <span class="moment__hours">9:00 - 14:00hs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="about__container">
+            <div class="about__content" data-animate="fade-right">
+                <span class="about__label">Nuestra historia</span>
+                <h2 class="about__title">Del nombre a la taza</h2>
+                <p class="about__text">Møde nació de la idea de que un café no es solo una bebida, sino un punto de encuentro. La ø nórdica en nuestro nombre representa esa mezcla de minimalismo escandinavo y calidez porteña que definimos cada día.</p>
+                <p class="about__text">Abrimos en Avellaneda con la convicción de que el café de especialidad no tiene por qué ser elitista. Queríamos un lugar donde la calidad se sienta pero no se ostente, donde el diseño invite a quedarse y donde cada detalle — desde la temperatura del café hasta la tapicería de las sillas — esté pensado para que te sientas en casa.</p>
+                <p class="about__text">Hoy somos dos sedes (Barracas y Avellaneda) y una comunidad que crece cada día. Gracias por ser parte.</p>
+            </div>
+            <div class="about__team" data-animate="fade-left">
+                <h3 class="team__title">El equipo</h3>
+                <div class="team__members">
+                    <div class="team__member">
+                        <div class="member__avatar">LF</div>
+                        <div class="member__info">
+                            <h4 class="member__name">Lucas Fernández</h4>
+                            <span class="member__role">Fundador & Head Barista</span>
+                        </div>
+                    </div>
+                    <div class="team__member">
+                        <div class="member__avatar">SR</div>
+                        <div class="member__info">
+                            <h4 class="member__name">Sofía Rossi</h4>
+                            <span class="member__role">Chef Pastelera</span>
+                        </div>
+                    </div>
+                    <div class="team__member">
+                        <div class="member__avatar">MT</div>
+                        <div class="member__info">
+                            <h4 class="member__name">Martín Torres</h4>
+                            <span class="member__role">Gerente de Sede Avellaneda</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Press -->
+    <section class="press" id="press">
+        <div class="press__container">
+            <h2 class="press__title" data-animate="fade-up">Lo que dicen de nosotros</h2>
+            <div class="press__grid">
+                <div class="press__quote" data-animate="fade-up" data-delay="100">
+                    <p class="quote__text">"Møde es uno de esos cafes que te hacen creer que Avellaneda está a la vanguardia del café de especialidad en Buenos Aires."</p>
+                    <span class="quote__source">— Porteño Foodie</span>
+                </div>
+                <div class="press__quote" data-animate="fade-up" data-delay="200">
+                    <p class="quote__text">"El tostón møde es probablemente el mejor brunch que vas a encontrar por esta zona. Creativo, generoso y con precios justos."</p>
+                    <span class="quote__source">— Guía Olé Gastronomía</span>
+                </div>
+                <div class="press__quote" data-animate="fade-up" data-delay="300">
+                    <p class="quote__text">"Diseño escandinavo porteño: así se define este café que ya es parada obligatoria para los amantes del buen café."</p>
+                    <span class="quote__source">— Revista Mimo</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="contact__container">
+            <div class="contact__info" data-animate="fade-right">
+                <h2 class="contact__title">Reservá tu mesa</h2>
+                <p class="contact__text">¿Venís con amigos, familia o en pareja? Escribinos por WhatsApp y te guardamos un lugar.</p>
+                
+                <div class="contact__details">
+                    <div class="contact__item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#C8983A"/>
+                        </svg>
+                        <span>San Martín 873, Avellaneda</span>
+                    </div>
+                    <div class="contact__item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="#C8983A"/>
+                        </svg>
+                        <a href="tel:+5491171550907">011 7155-0907</a>
+                    </div>
+                    <div class="contact__item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" fill="#C8983A"/>
+                        </svg>
+                        <div>
+                            <span>Lun - Vie: 8:00 - 20:00</span>
+                            <span>Sáb: 8:00 - 20:30</span>
+                            <span>Dom: 9:00 - 20:30</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact__social">
+                    <a href="https://www.instagram.com/modecafe_ok/?hl=es-la" class="social__link" target="_blank" rel="noopener" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" fill="#2C2C2C"/>
+                        </svg>
+                    </a>
+                    <a href="https://linktr.ee/modecafe_ok" class="social__link" target="_blank" rel="noopener" aria-label="Linktree">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 22h20L12 2zm0 4.5l5.5 11h-11L12 6.5z" fill="#2C2C2C"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="contact__form" data-animate="fade-left">
+                <form id="reservationForm">
+                    <h3 class="form__title">Hacé tu reserva</h3>
+                    <div class="form__group">
+                        <label for="name" class="form__label">Nombre</label>
+                        <input type="text" id="name" name="name" class="form__input" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="phone" class="form__label">Teléfono</label>
+                        <input type="tel" id="phone" name="phone" class="form__input" required>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__group">
+                            <label for="date" class="form__label">Fecha</label>
+                            <input type="date" id="date" name="date" class="form__input" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="time" class="form__label">Hora</label>
+                            <select id="time" name="time" class="form__input" required>
+                                <option value="">Seleccionar</option>
+                                <option value="08:00">8:00</option>
+                                <option value="09:00">9:00</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:00">11:00</option>
+                                <option value="12:00">12:00</option>
+                                <option value="13:00">13:00</option>
+                                <option value="14:00">14:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="17:00">17:00</option>
+                                <option value="18:00">18:00</option>
+                                <option value="19:00">19:00</option>
+                                <option value="20:00">20:00</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <label for="people" class="form__label">Cantidad de personas</label>
+                        <select id="people" name="people" class="form__input" required>
+                            <option value="">Seleccionar</option>
+                            <option value="1">1 persona</option>
+                            <option value="2">2 personas</option>
+                            <option value="3">3 personas</option>
+                            <option value="4">4 personas</option>
+                            <option value="5">5 personas</option>
+                            <option value="6">6 personas</option>
+                            <option value="7+">7+ personas</option>
+                        </select>
+                    </div>
+                    <div class="form__group">
+                        <label for="message" class="form__label">Mensaje (opcional)</label>
+                        <textarea id="message" name="message" class="form__input" rows="3" placeholder="¿Algo que debamos saber? (celebración, alergias, preferencia de mesa...)"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        Reservar por WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__map">
+            <iframe 
+                src="https://maps.google.com/maps?q=San+Martin+873+Avellaneda+Buenos+Aires&output=embed" 
+                width="100%" 
+                height="350" 
+                style="border:0;" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <a href="#hero" class="footer__logo">
+                        <span class="logo-text">m<span class="logo-ø">ø</span>de</span>
+                    </a>
+                    <p class="footer__tagline">Un café mil encuentros</p>
+                </div>
+                <div class="footer__info">
+                    <h4 class="footer__title">Horarios</h4>
+                    <p>Lunes a Viernes: 8:00 - 20:00</p>
+                    <p>Sábado: 8:00 - 20:30</p>
+                    <p>Domingo: 9:00 - 20:30</p>
+                </div>
+                <div class="footer__info">
+                    <h4 class="footer__title">Contacto</h4>
+                    <p><a href="tel:+5491171550907">011 7155-0907</a></p>
+                    <p><a href="http://wa.me/5491171550907" target="_blank" rel="noopener">WhatsApp Avellaneda</a></p>
+                    <p><a href="http://wa.me/5491171550903" target="_blank" rel="noopener">WhatsApp Barracas</a></p>
+                </div>
+                <div class="footer__info">
+                    <h4 class="footer__title">Redes</h4>
+                    <p><a href="https://www.instagram.com/modecafe_ok/?hl=es-la" target="_blank" rel="noopener">Instagram</a></p>
+                    <p><a href="https://linktr.ee/modecafe_ok" target="_blank" rel="noopener">Linktree</a></p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>© 2026 Møde café de especialidad. Todos los derechos reservados.</p>
+                <p class="footer__credit">Diseñado por <a href="https://tuweben3dias.com" target="_blank" rel="noopener">tuweben3dias.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="http://wa.me/5491171550907?text=Hola%20Møde%2C%20tengo%20una%20consulta" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <script src="./script.js"></script>
+</body>
+</html>
